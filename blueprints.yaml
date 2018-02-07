@@ -1,0 +1,26 @@
+name: Twig Lambda
+version: 0.1.0
+description: Enable the Twig Lambda extension
+icon: plug
+author:
+  name: Tuukka Norri
+  email: tsnorri@iki.fi
+homepage: https://github.com/tsnorri/grav-plugin-twig-lambda
+keywords: grav, plugin, twig, lambda
+bugs: https://github.com/tsnorri/grav-plugin-twig-lambda/issues
+docs: https://github.com/tsnorri/grav-plugin-twig-lambda/blob/master/README.md
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin status
+      highlight: 1
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
